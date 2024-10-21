@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sim-app-local
+  labels:
+    app: node-svr
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-svr
+  template:
+    metadata:
+      labels:
+        app: node-svr
+    spec: 
+      terminationGracePeriodSeconds: 1
+      containers:
+      - name: app-ctr
+        image: simple-app-local
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5001
