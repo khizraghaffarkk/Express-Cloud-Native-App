@@ -1,5 +1,5 @@
 # Express-Cloud-Native-App
-This project is a simple Express.js application that runs inside a Docker container and is deployed using Kubernetes (Minikube).
+This project is an Express.js application that runs inside a Docker container and is deployed using Kubernetes (Minikube).
 
 ## Prerequisites
 
